@@ -99,7 +99,7 @@ function enc(text:string) {
 
 ////  
 
-import { TEFPiece, parseTefPieces, parseLine, parseContentChunkAtBol, parseContentChunkNotAtBol } from './tef.ts';
+import { TEFPiece, parseTefPieces, parseLine, parseContentChunkAtBol } from './tef.ts';
 import { assertEquals, assertRejects } from "https://deno.land/std@0.119.0/testing/asserts.ts";
 
 type TEFParser = (chunks:AsyncIter<Uint8Array>) => AsyncIterable<TEFPiece>;
